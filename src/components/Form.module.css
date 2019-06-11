@@ -1,0 +1,32 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 123, 100);
+  opacity: 1; /* Firefox */
+  font-weight: normal;
+}
+input[type=text]:focus{
+  outline: 2px solid rgb(255, 255, 255);
+}
+button:focus {
+  outline: 2px solid rgb(255, 255, 255);
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.textbox {
+  font-size: 150%;
+  width: 50%;
+  border: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.20);
+}
+.button {
+  font-size: 150%;
+  border: none;
+  padding: 10px 15px;
+  color: rgba(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(255, 123, 100);
+}

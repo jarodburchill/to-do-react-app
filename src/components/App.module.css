@@ -1,1 +1,10 @@
-
+.app {
+  min-height: 100vh;
+}
+.title {
+  font-size: 250%;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255);
+  font-weight: bold;
+}
