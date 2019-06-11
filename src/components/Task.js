@@ -1,9 +1,11 @@
 import React from 'react';
 import style from './Task.module.css';
 
-function Task() {
+const Task = (props) => {
   return (
     <>
+      <h2>{props.taskName}</h2>
+      <br></br>
     </>
   );
 }

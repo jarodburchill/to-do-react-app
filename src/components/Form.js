@@ -1,18 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Form.module.css';
 
-function Form() {
+const Form = () => {
+  const [taskName, setTaskName] = useState("");
+
+  const txtTaskName_OnChange = e => {
+    setTaskName(e.target.value);
+  }
+
+  const frmAddTask_OnSubmit = e => {
+    e.preventDefault();
+    if (localStorage.getItem("tasks") === null) {
+      localStorage.setItem("tasks", "");
+    }
+    const tasks = localStorage.getItem("tasks");
+    localStorage.setItem("tasks", tasks + taskName + "::");
+    setTaskName("");
+  }
+
   return (
-    <>
-      <form className={style.form}>
-        <input
-          type="text"
-          placeholder="task name"
-          className={style.textbox}
-        />
-        <button type="submit" className={style.button}>Add</button>
-      </form>
-    </>
+    <form id="frmAddTask" name="frmAddTask" 
+      onSubmit={frmAddTask_OnSubmit} className={style.form}>
+      <input
+        id="txtTaskName"
+        name="txtTaskName"
+        type="text"
+        placeholder="task name"
+        value={taskName}
+        onChange={txtTaskName_OnChange}
+        className={style.textbox}
+      />
+      <button
+        id="btnAdd"
+        name="btnAdd"
+        type="submit"
+        className={style.button}>
+        Add
+      </button>
+    </form>
   );
 }
 
