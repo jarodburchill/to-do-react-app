@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.20);
+  color: rgb(255, 255, 255);
+  width: calc(50% + 55px);
+}
+
+.task:hover {
+  background-color: rgb(255, 123, 100);
+}

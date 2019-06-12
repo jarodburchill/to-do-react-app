@@ -12,6 +12,7 @@ button:focus {
 .form {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .textbox {
   font-size: 150%;
@@ -21,12 +22,17 @@ button:focus {
   color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.20);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .button {
   font-size: 150%;
   border: none;
+  width: 75px;
   padding: 10px 15px;
   color: rgba(255, 255, 255);
   font-weight: bold;
   background-color: rgb(255, 123, 100);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
