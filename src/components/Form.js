@@ -24,7 +24,7 @@ const Form = (props) => {
   }
 
   return (
-    <form id="frmAddTask" name="frmAddTask" 
+    <form id="frmAddTask" name="frmAddTask" autoComplete="off"
       onSubmit={frmAddTask_OnSubmit} className={style.form}>
       <input
         id="txtTaskName"
