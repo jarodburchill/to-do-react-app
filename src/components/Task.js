@@ -6,9 +6,11 @@ const Task = (props) => {
     e.preventDefault();
     const updatedTaskArray = props.taskArray;
     updatedTaskArray.splice(props.index, 1);
-    localStorage.setItem("tasks", (updatedTaskArray.join("::")));
-    if (localStorage.getItem("tasks") === "") {
+    if (updatedTaskArray.length === 0) {
       localStorage.removeItem("tasks");
+    }
+    else {
+      localStorage.setItem("tasks", (updatedTaskArray.join("::")));
     }
     props.setUpdate(true);
   }
