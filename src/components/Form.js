@@ -11,10 +11,14 @@ const Form = (props) => {
   const frmAddTask_OnSubmit = e => {
     e.preventDefault();
     if (localStorage.getItem("tasks") === null) {
-      localStorage.setItem("tasks", "");
+      localStorage.setItem("tasks", taskName);
     }
-    const tasks = localStorage.getItem("tasks");
-    localStorage.setItem("tasks", tasks + taskName + "::");
+    else {
+      const tasks = localStorage.getItem("tasks");
+      const taskArray = (tasks.split("::"));
+      taskArray.push(taskName)
+      localStorage.setItem("tasks", taskArray.join("::"));
+    }
     setTaskName("");
     props.setUpdate(true);
   }

@@ -7,7 +7,7 @@ const List = (props) => {
   useEffect(() => {
     if (localStorage.getItem("tasks") !== null) {
       const tasks = localStorage.getItem("tasks");
-      setTaskArray((tasks.substring(0, tasks.length - 2)).split("::"));
+      setTaskArray(tasks.split("::"));
     }
     props.setUpdate(false);
   }, [props.update]);
