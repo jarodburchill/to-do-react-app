@@ -20,8 +20,10 @@
        animation: fadein 0.75s;
 }
 
-.task:hover {
-  background-color: rgb(255, 123, 100);
+@media (hover: hover) {
+  .task:hover {
+    background-color: rgb(255, 123, 100);
+  }
 }
 
 @keyframes fadein {

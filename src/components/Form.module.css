@@ -9,9 +9,11 @@ input[type=text]:focus{
 button:focus {
   outline: 0;
 }
-button:hover {
-  color: rgb(255, 123, 100);
-  background-color: rgba(255, 255, 255);
+@media (hover: hover) {
+  button:hover {
+    color: rgb(255, 123, 100);
+    background-color: rgba(255, 255, 255);
+  }
 }
 .form {
   display: flex;
