@@ -12,8 +12,8 @@ https://jarodburchill.github.io/to-do-react-app
 ![alt text](preview.png "Preview Image")
 ## Installation: 
 ```
-git clone https://github.com/jarodburchill/ToDoReactApp
-cd ToDoReactApp
+git clone https://github.com/jarodburchill/to-do-react-app
+cd to-do-react-app
 npm install
 npm start
 ```
